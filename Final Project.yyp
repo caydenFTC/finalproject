@@ -36,6 +36,10 @@
   "name":"Final Project",
   "resources":[
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_tilesetBG","path":"sprites/spr_tilesetBG/spr_tilesetBG.yy",},},
+    {"id":{"name":"spr_tilesetGround","path":"sprites/spr_tilesetGround/spr_tilesetGround.yy",},},
+    {"id":{"name":"spr_tilesetHazards","path":"sprites/spr_tilesetHazards/spr_tilesetHazards.yy",},},
+    {"id":{"name":"spr_tilesetProps","path":"sprites/spr_tilesetProps/spr_tilesetProps.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

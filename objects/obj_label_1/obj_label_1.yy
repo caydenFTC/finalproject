@@ -4,10 +4,12 @@
   "eventList":[],
   "managed":true,
   "name":"obj_label_1",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_label_parent","path":"objects/obj_label_parent/obj_label_parent.yy",},"propertyId":{"name":"text_data","path":"objects/obj_label_parent/obj_label_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Placeholder",},
+  ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"UI",
+    "path":"folders/Objects/UI.yy",
   },
   "parentObjectId":{
     "name":"obj_label_parent",

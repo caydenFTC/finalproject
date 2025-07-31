@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_UI_coin",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_label_3",
+  "eventList":[],
   "managed":true,
-  "name":"obj_UI_coin",
-  "overriddenProperties":[],
+  "name":"obj_label_3",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_label_parent","path":"objects/obj_label_parent/obj_label_parent.yy",},"propertyId":{"name":"text_data","path":"objects/obj_label_parent/obj_label_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Start",},
+  ],
   "parent":{
     "name":"UI",
     "path":"folders/Objects/UI.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_label_parent",
+    "path":"objects/obj_label_parent/obj_label_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_coin",
-    "path":"sprites/spr_coin/spr_coin.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -11,3 +11,10 @@ collision_tilemap = layer_tilemap_get_id("Tilemap1");
 /// @DnDArgument : "expr" "layer_tilemap_get_id("TilemapHazards")"
 /// @DnDArgument : "var" "collision_deathzone"
 collision_deathzone = layer_tilemap_get_id("TilemapHazards");
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 61D8078B
+/// @DnDArgument : "expr" "1"
+/// @DnDArgument : "var" "health"
+health = 1;

@@ -59,7 +59,6 @@
     {"id":{"name":"spr_jump","path":"sprites/spr_jump/spr_jump.yy",},},
     {"id":{"name":"spr_placeholder","path":"sprites/spr_placeholder/spr_placeholder.yy",},},
     {"id":{"name":"spr_skeleton_idle","path":"sprites/spr_skeleton_idle/spr_skeleton_idle.yy",},},
-    {"id":{"name":"spr_skeleton_walk","path":"sprites/spr_skeleton_walk/spr_skeleton_walk.yy",},},
     {"id":{"name":"spr_speed","path":"sprites/spr_speed/spr_speed.yy",},},
     {"id":{"name":"spr_tilesetBG","path":"sprites/spr_tilesetBG/spr_tilesetBG.yy",},},
     {"id":{"name":"spr_tilesetGround","path":"sprites/spr_tilesetGround/spr_tilesetGround.yy",},},

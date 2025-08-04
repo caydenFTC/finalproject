@@ -55,6 +55,7 @@
     {"id":{"name":"obj_UI_coin","path":"objects/obj_UI_coin/obj_UI_coin.yy",},},
     {"id":{"name":"obj_UI_health","path":"objects/obj_UI_health/obj_UI_health.yy",},},
     {"id":{"name":"ParticleSystem1","path":"particles/ParticleSystem1/ParticleSystem1.yy",},},
+    {"id":{"name":"Caves","path":"rooms/Caves/Caves.yy",},},
     {"id":{"name":"GameOver","path":"rooms/GameOver/GameOver.yy",},},
     {"id":{"name":"Plains","path":"rooms/Plains/Plains.yy",},},
     {"id":{"name":"StartScreen","path":"rooms/StartScreen/StartScreen.yy",},},
@@ -82,6 +83,7 @@
     {"roomId":{"name":"StartScreen","path":"rooms/StartScreen/StartScreen.yy",},},
     {"roomId":{"name":"Plains","path":"rooms/Plains/Plains.yy",},},
     {"roomId":{"name":"GameOver","path":"rooms/GameOver/GameOver.yy",},},
+    {"roomId":{"name":"Caves","path":"rooms/Caves/Caves.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

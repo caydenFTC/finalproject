@@ -2,8 +2,8 @@
 /// @DnDVersion : 1
 /// @DnDHash : 10A60C80
 /// @DnDArgument : "var" "dead"
-/// @DnDArgument : "value" "1"
-if(dead == 1){	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Pressed
+/// @DnDArgument : "value" "true"
+if(dead == true){	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Pressed
 	/// @DnDVersion : 1.1
 	/// @DnDHash : 4C54C50C
 	/// @DnDParent : 10A60C80
@@ -51,8 +51,9 @@ if(dead == 1){	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Pressed
 		/// @DnDVersion : 1
 		/// @DnDHash : 56BD230F
 		/// @DnDParent : 4C54C50C
+		/// @DnDArgument : "expr" "false"
 		/// @DnDArgument : "var" "dead"
-		dead = 0;
+		dead = false;
 	
 		/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
 		/// @DnDVersion : 1
@@ -72,9 +73,9 @@ var l5C43CDC2_0 = instance_place(x + 0, y + 2, [collision_deathzone]);if ((l5C4
 	/// @DnDVersion : 1
 	/// @DnDHash : 37612FA1
 	/// @DnDParent : 5C43CDC2
-	/// @DnDArgument : "expr" "1"
+	/// @DnDArgument : "expr" "true"
 	/// @DnDArgument : "var" "dead"
-	dead = 1;
+	dead = true;
 
 	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
 	/// @DnDVersion : 1

@@ -31,9 +31,9 @@ if(health <= 0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 396ADEFF
 	/// @DnDParent : 765E4A78
-	/// @DnDArgument : "expr" "1"
+	/// @DnDArgument : "expr" "true"
 	/// @DnDArgument : "var" "dead"
-	dead = 1;
+	dead = true;
 
 	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
 	/// @DnDVersion : 1

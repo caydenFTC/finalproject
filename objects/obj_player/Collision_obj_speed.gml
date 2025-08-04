@@ -17,7 +17,8 @@ walk_speed = walk_speed * 2;
 /// @DnDVersion : 1
 /// @DnDHash : 27765C4F
 /// @DnDArgument : "steps" "900"
-alarm_set(0, 900);
+/// @DnDArgument : "steps_relative" "1"
+alarm_set(0, 900 + alarm_get(0));
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1

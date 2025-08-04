@@ -17,7 +17,8 @@ jump_speed = jump_speed * 2;
 /// @DnDVersion : 1
 /// @DnDHash : 6371594D
 /// @DnDArgument : "steps" "900"
-alarm_set(0, 900);
+/// @DnDArgument : "steps_relative" "1"
+alarm_set(0, 900 + alarm_get(0));
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1

@@ -27,15 +27,25 @@ show_debug_message(string("player hit!"));
 /// @DnDHash : 765E4A78
 /// @DnDArgument : "var" "health"
 /// @DnDArgument : "op" "3"
-if(health <= 0){	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+if(health <= 0){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 396ADEFF
+	/// @DnDParent : 765E4A78
+	/// @DnDArgument : "expr" "1"
+	/// @DnDArgument : "var" "dead"
+	dead = 1;
+
+	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
 	/// @DnDVersion : 1
 	/// @DnDHash : 46EAD797
 	/// @DnDParent : 765E4A78
 	/// @DnDArgument : "msg" ""death""
 	show_debug_message(string("death"));
 
-	/// @DnDAction : YoYo Games.Rooms.Restart_Room
+	/// @DnDAction : YoYo Games.Rooms.Go_To_Room
 	/// @DnDVersion : 1
-	/// @DnDHash : 765395DD
+	/// @DnDHash : 11775947
 	/// @DnDParent : 765E4A78
-	room_restart();}
+	/// @DnDArgument : "room" "GameOver"
+	/// @DnDSaveInfo : "room" "GameOver"
+	room_goto(GameOver);}

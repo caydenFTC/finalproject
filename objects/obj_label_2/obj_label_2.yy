@@ -5,15 +5,15 @@
   "managed":true,
   "name":"obj_label_2",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_label_parent","path":"objects/obj_label_parent/obj_label_parent.yy",},"propertyId":{"name":"text_data","path":"objects/obj_label_parent/obj_label_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Placeholder",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_label_parent_small","path":"objects/obj_label_parent_small/obj_label_parent_small.yy",},"propertyId":{"name":"text_data","path":"objects/obj_label_parent_small/obj_label_parent_small.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Cooper, is an extraordinary miner.\\nCooper and his friend, Cole, enjoy going on mining trips together.\\nUnfortunately, during one of their trips, Coles soul got taken underground by the evil Skeele-torn.\\nCole is now soulless and weak. Cooper cannot bear to see his friend so lifeless so,\\nCooper embarks on a treacherous adventure to retrieve his friend's soul from the caves.   ",},
   ],
   "parent":{
     "name":"UI",
     "path":"folders/Objects/UI.yy",
   },
   "parentObjectId":{
-    "name":"obj_label_parent",
-    "path":"objects/obj_label_parent/obj_label_parent.yy",
+    "name":"obj_label_parent_small",
+    "path":"objects/obj_label_parent_small/obj_label_parent_small.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

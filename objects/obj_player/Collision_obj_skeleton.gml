@@ -22,12 +22,27 @@ health = health - 1;
 /// @DnDArgument : "msg" ""player hit!""
 show_debug_message(string("player hit!"));
 
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1.1
+/// @DnDHash : 42D44E0E
+/// @DnDArgument : "soundid" "hit"
+/// @DnDSaveInfo : "soundid" "hit"
+audio_play_sound(hit, 0, 0, 1.0, undefined, 1.0);
+
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 765E4A78
 /// @DnDArgument : "var" "health"
 /// @DnDArgument : "op" "3"
-if(health <= 0){	/// @DnDAction : YoYo Games.Common.Variable
+if(health <= 0){	/// @DnDAction : YoYo Games.Audio.Play_Audio
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 7BD20A97
+	/// @DnDParent : 765E4A78
+	/// @DnDArgument : "soundid" "explosion2"
+	/// @DnDSaveInfo : "soundid" "explosion2"
+	audio_play_sound(explosion2, 0, 0, 1.0, undefined, 1.0);
+
+	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 396ADEFF
 	/// @DnDParent : 765E4A78

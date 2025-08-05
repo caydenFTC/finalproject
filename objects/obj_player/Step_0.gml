@@ -7,7 +7,16 @@ if(dead == true){	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Presse
 	/// @DnDVersion : 1.1
 	/// @DnDHash : 4C54C50C
 	/// @DnDParent : 10A60C80
-	var l4C54C50C_0;l4C54C50C_0 = mouse_check_button_pressed(mb_left);if (l4C54C50C_0){	/// @DnDAction : YoYo Games.Common.If_Variable
+	var l4C54C50C_0;l4C54C50C_0 = mouse_check_button_pressed(mb_left);if (l4C54C50C_0){	/// @DnDAction : YoYo Games.Audio.Play_Audio
+		/// @DnDVersion : 1.1
+		/// @DnDHash : 5BA520A6
+		/// @DnDParent : 4C54C50C
+		/// @DnDArgument : "soundid" "click"
+		/// @DnDArgument : "pitch" "1"
+		/// @DnDSaveInfo : "soundid" "click"
+		audio_play_sound(click, 0, 0, 1.0, undefined, 1);
+	
+		/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 6211E2C3
 		/// @DnDParent : 4C54C50C
@@ -32,6 +41,7 @@ if(dead == true){	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Presse
 			/// @DnDHash : 634217DB
 			/// @DnDParent : 325DF926
 			/// @DnDArgument : "room" "Caves"
+			/// @DnDSaveInfo : "room" "Caves"
 			room_goto(Caves);}
 	
 		/// @DnDAction : YoYo Games.Common.If_Variable
@@ -130,7 +140,15 @@ var l0892F513_0 = instance_place(x + 0, y + 2, [collision_tilemap]);if ((l0892F
 		/// @DnDParent : 28545851
 		/// @DnDArgument : "expr" "-jump_speed"
 		/// @DnDArgument : "var" "move_y"
-		move_y = -jump_speed;}}
+		move_y = -jump_speed;
+	
+		/// @DnDAction : YoYo Games.Audio.Play_Audio
+		/// @DnDVersion : 1.1
+		/// @DnDHash : 5EBE23A9
+		/// @DnDParent : 28545851
+		/// @DnDArgument : "soundid" "jump"
+		/// @DnDSaveInfo : "soundid" "jump"
+		audio_play_sound(jump, 0, 0, 1.0, undefined, 1.0);}}
 
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1

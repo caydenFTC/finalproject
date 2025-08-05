@@ -26,9 +26,7 @@ draw_set_font(font_lucida_fax);
 /// @DnDVersion : 1
 /// @DnDHash : 24A0F495
 /// @DnDArgument : "x" "30"
-/// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y" "-15"
-/// @DnDArgument : "y_relative" "1"
+/// @DnDArgument : "y" "10"
 /// @DnDArgument : "caption" ""Coins: ""
 /// @DnDArgument : "var" "obj_player.coins"
-draw_text(x + 30, y + -15, string("Coins: ") + string(obj_player.coins));
+draw_text(30, 10, string("Coins: ") + string(obj_player.coins));

@@ -26,9 +26,7 @@ draw_set_font(font_lucida_fax);
 /// @DnDVersion : 1
 /// @DnDHash : 24A0F495
 /// @DnDArgument : "x" "30"
-/// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y" "-30"
-/// @DnDArgument : "y_relative" "1"
+/// @DnDArgument : "y" "80"
 /// @DnDArgument : "caption" ""Health: ""
 /// @DnDArgument : "var" "obj_player.health"
-draw_text(x + 30, y + -30, string("Health: ") + string(obj_player.health));
+draw_text(30, 80, string("Health: ") + string(obj_player.health));

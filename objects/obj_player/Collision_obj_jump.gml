@@ -5,6 +5,13 @@
 /// @DnDArgument : "var" "jump_speed"
 jump_speed = jump_speed * 2;
 
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1.1
+/// @DnDHash : 1A0C7F38
+/// @DnDArgument : "soundid" "powerup"
+/// @DnDSaveInfo : "soundid" "powerup"
+audio_play_sound(powerup, 0, 0, 1.0, undefined, 1.0);
+
 /// @DnDAction : YoYo Games.Layers.Layer_Set_Visible
 /// @DnDVersion : 1
 /// @DnDHash : 35877D71

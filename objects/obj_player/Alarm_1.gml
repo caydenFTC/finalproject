@@ -1,9 +1,9 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 14637E98
-/// @DnDArgument : "expr" "walk_speed / 2"
+/// @DnDArgument : "expr" "walk_speed / 1.5"
 /// @DnDArgument : "var" "walk_speed"
-walk_speed = walk_speed / 2;
+walk_speed = walk_speed / 1.5;
 
 /// @DnDAction : YoYo Games.Layers.Layer_Set_Visible
 /// @DnDVersion : 1

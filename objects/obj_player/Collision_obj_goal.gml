@@ -28,6 +28,7 @@ if(level == 2){	/// @DnDAction : YoYo Games.Rooms.Go_To_Room
 	/// @DnDHash : 5ED3CE43
 	/// @DnDParent : 40F00DC9
 	/// @DnDArgument : "room" "Underground"
+	/// @DnDSaveInfo : "room" "Underground"
 	room_goto(Underground);}
 
 /// @DnDAction : YoYo Games.Common.If_Variable

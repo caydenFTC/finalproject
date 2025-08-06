@@ -1,12 +1,13 @@
-/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1
-/// @DnDHash : 6881CFF0
-/// @DnDArgument : "expr" "jump_speed / 2"
-/// @DnDArgument : "var" "jump_speed"
-jump_speed = jump_speed / 2;
+/// @DnDHash : 5F60F4CD
+/// @DnDApplyTo : {obj_hitbox}
+with(obj_hitbox) instance_destroy();
 
-/// @DnDAction : YoYo Games.Layers.Layer_Set_Visible
+/// @DnDAction : YoYo Games.Instances.Set_Sprite
 /// @DnDVersion : 1
-/// @DnDHash : 2177E441
-/// @DnDDisabled : 1
-/// @DnDArgument : "layer" "PowerupFX"
+/// @DnDHash : 247820AC
+/// @DnDArgument : "spriteind" "spr_player_idle"
+/// @DnDSaveInfo : "spriteind" "spr_player_idle"
+sprite_index = spr_player_idle;
+image_index = 0;

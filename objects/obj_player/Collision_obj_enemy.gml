@@ -31,7 +31,15 @@ audio_play_sound(hit, 0, 0, 1.0, undefined, 1.0);
 /// @DnDHash : 27DDE9D9
 /// @DnDArgument : "var" "HP"
 /// @DnDArgument : "op" "3"
-if(HP <= 0){	/// @DnDAction : YoYo Games.Rooms.Go_To_Room
+if(HP <= 0){	/// @DnDAction : YoYo Games.Audio.Play_Audio
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 1BFCB651
+	/// @DnDParent : 27DDE9D9
+	/// @DnDArgument : "soundid" "explosion2"
+	/// @DnDSaveInfo : "soundid" "explosion2"
+	audio_play_sound(explosion2, 0, 0, 1.0, undefined, 1.0);
+
+	/// @DnDAction : YoYo Games.Rooms.Go_To_Room
 	/// @DnDVersion : 1
 	/// @DnDHash : 623520B3
 	/// @DnDParent : 27DDE9D9

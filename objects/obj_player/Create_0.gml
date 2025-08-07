@@ -17,7 +17,16 @@ collision_tilemap_death_zone = layer_tilemap_get_id("TilemapHazards");
 /// @DnDHash : 72582C5B
 /// @DnDArgument : "var" "level"
 /// @DnDArgument : "value" "1"
-if(level == 1){	/// @DnDAction : YoYo Games.Common.Set_Global
+if(level == 1){	/// @DnDAction : YoYo Games.Audio.Play_Audio
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 790DA659
+	/// @DnDParent : 72582C5B
+	/// @DnDArgument : "soundid" "Floating_Cities"
+	/// @DnDArgument : "loop" "1"
+	/// @DnDSaveInfo : "soundid" "Floating_Cities"
+	audio_play_sound(Floating_Cities, 0, 1, 1.0, undefined, 1.0);
+
+	/// @DnDAction : YoYo Games.Common.Set_Global
 	/// @DnDVersion : 1
 	/// @DnDHash : 7638ABF1
 	/// @DnDParent : 72582C5B

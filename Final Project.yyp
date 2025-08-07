@@ -57,7 +57,6 @@
     {"id":{"name":"obj_speed","path":"objects/obj_speed/obj_speed.yy",},},
     {"id":{"name":"obj_start_button","path":"objects/obj_start_button/obj_start_button.yy",},},
     {"id":{"name":"obj_UI_coin","path":"objects/obj_UI_coin/obj_UI_coin.yy",},},
-    {"id":{"name":"obj_UI_health","path":"objects/obj_UI_health/obj_UI_health.yy",},},
     {"id":{"name":"Caves","path":"rooms/Caves/Caves.yy",},},
     {"id":{"name":"GameOver","path":"rooms/GameOver/GameOver.yy",},},
     {"id":{"name":"Plains","path":"rooms/Plains/Plains.yy",},},

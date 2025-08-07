@@ -1,9 +1,9 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 5EFB3481
-/// @DnDArgument : "expr" "health + 1"
-/// @DnDArgument : "var" "health "
-health  = health + 1;
+/// @DnDArgument : "expr" "HP + 1"
+/// @DnDArgument : "var" "HP"
+HP = HP + 1;
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1

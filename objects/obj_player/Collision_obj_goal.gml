@@ -41,4 +41,5 @@ if(level == 3){	/// @DnDAction : YoYo Games.Rooms.Go_To_Room
 	/// @DnDHash : 7DDFFF42
 	/// @DnDParent : 6F0F8F25
 	/// @DnDArgument : "room" "Win"
+	/// @DnDSaveInfo : "room" "Win"
 	room_goto(Win);}

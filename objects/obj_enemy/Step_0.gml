@@ -1,27 +1,52 @@
+/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+/// @DnDVersion : 1
+/// @DnDHash : 3210E884
+/// @DnDArgument : "msg" "move_x"
+show_debug_message(string(move_x));
+
 /// @DnDAction : YoYo Games.Collisions.If_Object_At
 /// @DnDVersion : 1.1
-/// @DnDHash : 498CA67E
-/// @DnDArgument : "x" "move_x"
+/// @DnDHash : 7C85F0D0
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "1"
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "object" "collision_tilemap"
-var l498CA67E_0 = instance_place(x + move_x, y + 1, [collision_tilemap]);if ((l498CA67E_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
+var l7C85F0D0_0 = instance_place(x + 0, y + 1, [collision_tilemap]);if ((l7C85F0D0_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
-	/// @DnDHash : 3EBD12F0
-	/// @DnDParent : 498CA67E
-	/// @DnDArgument : "expr" "move_x*-1"
-	/// @DnDArgument : "var" "move_x"
-	move_x = move_x*-1;}
+	/// @DnDHash : 0E3D986E
+	/// @DnDParent : 7C85F0D0
+	/// @DnDArgument : "var" "move_y"
+	move_y = 0;
+
+	/// @DnDAction : YoYo Games.Collisions.If_Object_At
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 57594A03
+	/// @DnDComment : Edge check
+	/// @DnDParent : 7C85F0D0
+	/// @DnDArgument : "x" "4 * move_x"
+	/// @DnDArgument : "x_relative" "1"
+	/// @DnDArgument : "y" "1"
+	/// @DnDArgument : "y_relative" "1"
+	/// @DnDArgument : "object" "collision_tilemap"
+	/// @DnDArgument : "not" "1"
+	var l57594A03_0 = instance_place(x + 4 * move_x, y + 1, [collision_tilemap]);if (!(l57594A03_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 7F82304C
+		/// @DnDParent : 57594A03
+		/// @DnDArgument : "expr" "move_x*-1"
+		/// @DnDArgument : "var" "move_x"
+		move_x = move_x*-1;}}
 
 /// @DnDAction : YoYo Games.Collisions.If_Object_At
 /// @DnDVersion : 1.1
 /// @DnDHash : 17A5D15F
-/// @DnDArgument : "x" "1"
+/// @DnDComment : Death check
+/// @DnDArgument : "x" "move_x"
 /// @DnDArgument : "x_relative" "1"
+/// @DnDArgument : "y" "-1"
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "object" "collision_tilemap_death_zone"
-var l17A5D15F_0 = instance_place(x + 1, y + 0, [collision_tilemap_death_zone]);if ((l17A5D15F_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
+var l17A5D15F_0 = instance_place(x + move_x, y + -1, [collision_tilemap_death_zone]);if ((l17A5D15F_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 3A1E4BDE
 	/// @DnDParent : 17A5D15F
@@ -31,16 +56,17 @@ var l17A5D15F_0 = instance_place(x + 1, y + 0, [collision_tilemap_death_zone]);
 
 /// @DnDAction : YoYo Games.Collisions.If_Object_At
 /// @DnDVersion : 1.1
-/// @DnDHash : 57594A03
-/// @DnDArgument : "x" "move_x"
+/// @DnDHash : 498CA67E
+/// @DnDComment : Wall check
+/// @DnDArgument : "x" "move_x * 5"
 /// @DnDArgument : "x_relative" "1"
+/// @DnDArgument : "y" "1"
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "object" "collision_tilemap"
-/// @DnDArgument : "not" "1"
-var l57594A03_0 = instance_place(x + move_x, y + 0, [collision_tilemap]);if (!(l57594A03_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
+var l498CA67E_0 = instance_place(x + move_x * 5, y + 1, [collision_tilemap]);if ((l498CA67E_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
-	/// @DnDHash : 7F82304C
-	/// @DnDParent : 57594A03
+	/// @DnDHash : 3EBD12F0
+	/// @DnDParent : 498CA67E
 	/// @DnDArgument : "expr" "move_x*-1"
 	/// @DnDArgument : "var" "move_x"
 	move_x = move_x*-1;}
@@ -77,9 +103,9 @@ var l432187B4_0 = instance_place(x + 30*move_x, y + 2, [collision_tilemap]);if 
 /// @DnDAction : YoYo Games.Movement.move_and_collide
 /// @DnDVersion : 1
 /// @DnDHash : 654BD475
-/// @DnDArgument : "xvel" "move_x"
+/// @DnDArgument : "xvel" "move_x * walk_speed"
 /// @DnDArgument : "yvel" "move_y"
 /// @DnDArgument : "maxxmove" "-1000"
 /// @DnDArgument : "maxymove" "-1000"
 /// @DnDArgument : "object" "collision_tilemap"
-move_and_collide(move_x, move_y, collision_tilemap,4,0,0,-1000,-1000);
+move_and_collide(move_x * walk_speed, move_y, collision_tilemap,4,0,0,-1000,-1000);
